@@ -36,9 +36,6 @@ config WS2812_STRIP_I2S
 
 config WS2812_STRIP_GPIO
 	bool "GPIO driver"
-	# Only an Cortex-M0 inline assembly implementation for the nRF51
-	# is supported currently.
-	depends on SOC_SERIES_NRF51X
 	help
 	  The GPIO driver does bit-banging with inline assembly,
 	  and is not available on all SoCs.
